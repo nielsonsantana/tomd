@@ -98,6 +98,9 @@ class Element:
 
     def __str__(self):
         wrapper = MARKDOWN.get(self.tag)
+        '{}'.format(wrapper[0])
+        '{}'.format(self.content)
+        '{}'.format(wrapper[1])
         self._result = u'{}{}{}'.format(wrapper[0], self.content, wrapper[1])
         return self._result
 
