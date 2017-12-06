@@ -98,7 +98,7 @@ class Element:
 
     def __str__(self):
         wrapper = MARKDOWN.get(self.tag)
-        self._result = '{}{}{}'.format(wrapper[0], self.content, wrapper[1])
+        self._result = u'{}{}{}'.format(wrapper[0], self.content, wrapper[1])
         return self._result
 
     def parse_inline(self):
