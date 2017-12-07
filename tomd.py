@@ -101,7 +101,7 @@ class Element:
         '{}'.format(wrapper[0])
         '{}'.format(self.content)
         '{}'.format(wrapper[1])
-        self._result = u'{}{}{}'.format(wrapper[0], self.content, wrapper[1])
+        self._result = '{}{}{}'.format(wrapper[0], self.content, wrapper[1])
         return self._result
 
     def parse_inline(self):
